@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <title>Tabela01</title>
+    <style>
+
+       th, td {
+            padding: 3px;
+       }
+       #idade {
+           text-align: center;
+       }
+       
+    </style>
+</head>
+<body>
+    <table border="1" Style="border-collapse: collapse;">
+        
+        <tr></tr>
+            <th>Nome do Funcionário</th>
+            <th>Sexo</th>
+            <th>Idade</th>
+            <th>Salário</th>
+        </tr>
+        <tr>
+            <td>Maria José</td>
+            <td rowspan="2">Feminino</td>
+            <td id="idade">14</td>
+            <td>R$1.500,00</td>
+        </tr>
+
+        <tr>
+            <td>Ana Clara</td>
+            <td id="idade">25</td>
+            <td>R$3.000,00</td>
+
+        </tr>
+
+        <tr>
+            <td>João Márcio</td>
+            <td rowspan="2">Masculino</td>
+            <td id="idade">74</td>
+            <td>R$5.000,00</td>
+        </tr>
+
+        <tr>
+            <td>Robson Crusoé</td>
+            <td id="idade">55</td>
+            <td>R$8.000,00</td>
+        </tr>
+        <tr>
+            <td colspan="3" style="text-align: right;"><b>Média de salário</b></td>
+            <td><b>R$4.375,00</b></td>
+        </tr>
+
+    </table>
+</body>
+</html>
