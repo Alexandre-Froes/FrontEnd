@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pagina02</title>
+</head>
+<body>
+   <form>
+        <label for="txtNome">Nome:</label>
+        <input id="txtNome" type="text" placeholder="Insira nome completo">
+        <br><br>
+
+        <label for="txtSenha">Senha:</label>
+        <input id="txtSenha" type="password" placeholder="De 5 a 10 caracteres">
+        <br><br>
+
+        <label for="txtDataNasc">Data de nascimento</label>
+        <input id="txtDataNasc" type="date">
+        <br><br>
+
+        <label for="txtNumero">Número</label>
+        <input id="txtNumero" type="number" min="0" max="1000" step="2">
+
+        <fieldset>
+            <legend>Contato</legend>
+            <label for="txtEmail">E-Mail</label>
+            <input id="txtEmail" type="email" placeholder="exemplo@exemplo.com">
+            <br><br>
+
+            <label for="txtSite">Site</label>
+            <input id="txtSite" type="url" placeholder="http://www.exemplosite.com">
+        </fieldset>
+
+            <label for="txtEstado">Estado</label>
+            <select id="txtEstado">
+            <option value="">MG</option>
+            <option value="">SP</option>
+            <option value="">GO</option>
+        </select>
+        <br><br>
+
+        <label>Sexo:</label>
+        <input type="radio" id="masc" name="sexo"> 
+        <label for="masc">Masculino</label>
+
+        <input type="radio" id="fem" name="sexo"> 
+        <label for="fem">Feminino</label>
+        <br><br>
+
+        <label for="">Línguas:</label>
+        <br>
+        
+        <input type="checkbox" name="linguas" id="ing">
+        <label for="ing">Inglês</label>
+        <br>
+
+        <input type="checkbox" name="linguas" id="port">
+        <label for="port">Português</label>
+        <br>
+
+        <input type="checkbox" name="linguas" id="ita">
+        <label for="ita">Italiano</label>
+        <br>
+        
+        <input type="checkbox" name="linguas" id="esp">
+        <label for="esp">Espanhol</label>
+
+
+   </form>
+</body>
+</html>
