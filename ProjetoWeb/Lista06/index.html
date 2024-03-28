@@ -5,19 +5,21 @@
     <title>Tabela01</title>
     <style>
 
-       th, td {
+       th, td, table {
             padding: 3px;
+            border: 1px solid black;
+            border-collapse: collapse;
        }
-       #idade {
+       .idade {
            text-align: center;
        }
        
     </style>
 </head>
 <body>
-    <table border="1" Style="border-collapse: collapse;">
+    <table>
         
-        <tr></tr>
+        <tr>
             <th>Nome do Funcionário</th>
             <th>Sexo</th>
             <th>Idade</th>
@@ -27,13 +29,13 @@
         <tr>
             <td>Maria José</td>
             <td rowspan="2">Feminino</td>
-            <td id="idade">14</td>
+            <td class="idade">14</td>
             <td>R$1.500,00</td>
         </tr>
 
         <tr>
             <td>Ana Clara</td>
-            <td id="idade">25</td>
+            <td class="idade">25</td>
             <td>R$3.000,00</td>
 
         </tr>
@@ -41,13 +43,13 @@
         <tr>
             <td>João Márcio</td>
             <td rowspan="2">Masculino</td>
-            <td id="idade">74</td>
+            <td class="idade">74</td>
             <td>R$5.000,00</td>
         </tr>
 
         <tr>
             <td>Robson Crusoé</td>
-            <td id="idade">55</td>
+            <td class="idade">55</td>
             <td>R$8.000,00</td>
         </tr>
         <tr>
