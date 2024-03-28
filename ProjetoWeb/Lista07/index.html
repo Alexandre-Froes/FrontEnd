@@ -11,7 +11,7 @@
 
     <p style="color: red;">Todos os campos são de preenchimento obrigatório</p>
 
-    <form action="">
+    <form>
         <fieldset>
             <legend>Dados Pessoais</legend>
             <label for="txtNome">Nome:</label> 
@@ -26,7 +26,7 @@
             <br>
             <br>
 
-            <label for="txtSexo">Sexo:</label> 
+            <label>Sexo:</label> 
             <br>
             <label for="txtMasc">Masculino</label>
             <input id="txtMasc" type="radio" required name="sexo">
@@ -74,7 +74,7 @@
             <label for="txtEstado">Estado:</label> 
             <br>
                 <select name="txtEstado" id="txtEstado" required>
-                    <option value="Default">Selecione um estado</option>
+                    <option value="" label="Selecione um estado"></option>
                     <option value="AC">Acre</option>
                     <option value="AL">Alagoas</option>
                     <option value="AP">Amapá</option>
@@ -103,6 +103,7 @@
                     <option value="SE">Sergipe</option>
                     <option value="TO">Tocantins</option>
                 </select>
+
             <br>
 
         </fieldset>
@@ -112,6 +113,6 @@
         <input type="reset" value="Limpar">
 
     </form>
-
+    
 </body>
 </html>
