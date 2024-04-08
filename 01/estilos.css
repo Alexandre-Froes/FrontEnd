@@ -22,24 +22,34 @@ nav ul {
     margin: 0px;
     padding: 0px;
     height: 47px;
+    position: fixed;
+    width: 100%;
+    background-color: black;
 }
 
 nav ul li {
     display: inline;
     font-size: 16px;
-    padding: 15px 20px 15px 20px;
     line-height: 45px;
     height: 47px;
-}
-
-nav ul li a {
-    color: aliceblue;
-    text-decoration: none;
 }
 
 nav ul li:hover {
     background-color: #cccccc;
     color: black;
+}
+
+nav ul li a {
+    color: #cccccc;
+    text-decoration: none;
+    padding: 15px 20px 15px 20px;
+}
+
+nav ul li a:hover {
+    color: black;
+    background-color: #cccccc;
+    text-decoration: none;
+    padding: 15px 20px 15px 20px;
 }
 
 .pesquisa {
@@ -61,10 +71,11 @@ nav ul li:hover {
 
 .inferior-meio {
     position: absolute;
-    bottom: 10%;
-    left: 33%;
-    font-size: 25px;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
+
 .titulo-img {
     font-size: 25px;
     font-weight: 300;
@@ -77,19 +88,6 @@ nav ul li:hover {
 
 .opaco {
     color: #666666;
-}
-
-.banda-descricao {
-    color: #666666;
-    font-style: italic;
-    font-weight: 600;
-    
-}
-
-.banda-texto {
-    text-align: justify;
-    padding: 0px 79px 80px 79px;
-    font-size: 15px;
 }
 
 main section {
@@ -141,17 +139,44 @@ main section:nth-child(3) div img {
     width: 245px;
 }
 
+main section:nth-child(3) div img:hover {
+    filter: brightness(70%);
+}
+
 main section:nth-child(4) h2 {
     color: black;
     padding: 50px 0px 40px 0px;
 }
 
-
-main section:nth-child(3) div img:hover {
-    filter: brightness(70%);
+main section:nth-child(4) img {
+    width: 100%;
 }
 
-.grid-container {
+footer {
+    text-align: center;
+}
+footer i {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    font-size: 20px;
+    opacity: 0.8;
+}
+
+footer i:hover {
+    opacity: 0.5;
+    
+}
+
+footer a {
+    color: gray;
+    text-decoration: none;
+}
+
+footer p {
+    padding-bottom: 40px;
+}
+
+/* .grid-container {
     display: grid;
     grid-template-columns: auto auto auto;
     padding: 0px;
@@ -161,6 +186,22 @@ main section:nth-child(3) div img:hover {
     padding: 0px 0px 10px 0px;
     font-size: 15px;
     text-align: center;
+} */
+
+.row {
+    display: flex;
+}
+
+.banda {
+    display:block;
+    text-align:center;
+    width: 800px;
+    margin: auto
+}
+
+.banda-img {
+    flex: 33.33%;
+    padding: 0px;
 }
 
 .datas-tour {
@@ -172,18 +213,31 @@ main section:nth-child(3) div img:hover {
     width:780px;
 }
 
+.banda-descricao {
+    color: #666666;
+    font-style: italic;
+    font-weight: 600;
+    
+}
+
+.banda-texto {
+    text-align: justify;
+    padding: 0px 79px 80px 79px;
+    font-size: 15px;
+}
+
 .vendidos {
     background-color: #f44336;
     color: white;
-    padding: 0px;
+    padding: 2px;
 }
 
-
-.row {
-    display: flex;
+.tour {
+    display:block;
+    text-align:center;
     width: 800px;
-    
-  }
+    margin: auto
+}
   
 .tour-lugares {
     flex: 33.33%;
@@ -212,14 +266,40 @@ main section:nth-child(3) div img:hover {
 }
 
 main section form input {
-    padding: 8px;
     font-size: 15px;
     border-color: #cccccc;
     border-style: solid; 
+    padding: 10px 10px 10px 10px;
+    margin: 5px 10px 0px 0px;
 
 }
 
-.nome-email {
-    float: left;
+.contato {
+    display:block;
+    text-align:center;
+    width: 800px;
+    margin: auto
     
+}
+
+.contatos-coluna1 {
+    flex: 50%;
+    text-align: left;
+    padding: 20px 10px 200px 0px;
+    font-size: 18px;
+}
+
+.contatos-coluna2 {
+    flex: 50%;
+    text-align: left;
+    padding-left: 100px;
+}
+
+.nome-email input {
+    float: left;
+    width: 200px;
+}
+
+.mensagem input{
+    width: 410px;
 }
