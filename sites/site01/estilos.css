@@ -16,6 +16,7 @@ header{
 nav {
     background-color: black;
     height: 47px;
+    z-index: 1;
 }
 
 nav ul {
