@@ -338,3 +338,47 @@ main section:nth-child(2) {
     font-weight: 400;
     color: red;
 }
+/*-----------------------------------------------*/
+            /*Section CLIENT REVIEWS*/
+main section:nth-child(3) {
+    text-align: center;
+}
+.row-container-client {
+    flex: auto;
+    width: 98%;
+    margin: auto;
+}
+.col-content-client {
+    box-shadow: rgba(71, 71, 71, 0.5) 0 0 5px 0;
+    float: left;
+    text-align: left;
+    background-color: white;
+    width: 16%;
+    padding: 8px 16px 8px 16px;
+    margin: 0 4px 60px 4px;
+}
+.col-content-client p{
+    font-size: 14px;
+    font-weight: 300;
+    opacity: .80;
+}
+.col-content-client h3 {
+    font-size: 18px;
+    font-weight: 500;
+}
+.col-content-client h4 {
+    font-size: 14px;
+    font-weight: 400;
+    opacity: .75;
+}
+.col-content-client img {
+    float: left;
+    height: 50px;
+    margin: 10px 10px 10px 0;
+}
+.content-info-client {
+    padding: 30px 10px 10px 10px;
+}
+.content-info-client i{
+    color: #e5ca24;
+}
