@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="lt">
+<head>
+    <meta charset="UTF-8">
+    <title>Teste03 - Dropdown & Tooltip</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        .menu-dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .menu-dropdown:hover .menu-dropdown-conteudo {
+            display: block;
+        }
+        .menu-dropdown-conteudo {
+            display: none;
+            position: absolute;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .menu-dropdown-conteudo a    {
+            background-color: black;
+            color: white;
+            padding: 8px 16px;
+            display: block;
+        }
+        .menu-dropdown .botao-dropdown {
+            background-color: #010900;
+        }
+        .botao-dropdown {
+            color: white;
+            padding: 8px 16px;
+            font-size: 16px;
+        }
+
+    </style>
+</head>
+<body>
+    <section>
+        <div class="menu-dropdown">
+            <button class="botao-dropdown">Olha um menu que bala</button>
+            <div class="menu-dropdown-conteudo">
+                <a href="">Opcao01</a>
+                <a href="">Opcao02</a>
+                <a href="">Opcao03</a>
+                <a href="">Opcao04</a>
+            </div>
+        </div>
+    </section>
+    <section>
+        
+    </section>
+</body>
+</html>

@@ -1,0 +1,88 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* -----------------------**NAVBAR**--------------------------- */
+header {
+    padding: 0;
+    margin: -4px;
+}
+header nav {
+    height: 50px;
+    width: 100%;
+    background-color: #006680;
+    text-align: center;
+}
+header nav ul {
+    width: 679px;
+    margin: auto;
+    padding: 0;
+}
+header nav ul li {
+    display: inline;
+}
+header nav ul li a {
+    padding: 16px 32px;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    display: block;
+    float: left;
+}
+header nav ul li a:hover {color: #006680; background-color: white;}
+
+/* -----------------------**MAIN**--------------------------- */
+main {
+    background-color: black;
+    padding: 40px 80px 0 80px;
+    margin: 0;
+    text-align: center;
+}
+main h1 {
+    color: white;
+    margin-bottom: 30px;
+}
+main h2 {
+    color: yellow;
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+/* -----------------------**SECTIONS**--------------------------- */
+main section {
+    padding: 32px;
+}
+main section:nth-child(even) {
+    background-color: #cccccc;
+}
+main section:nth-child(odd) {
+    background-color: white;
+}
+main section p {
+    text-align: justify;
+    line-height: 1.4;
+    margin-bottom: 24px;   
+}
+main section ul {
+    text-align: left;
+    margin: 0 0 0 48px;
+}
+main section ul li {
+    font-style: italic;
+    margin-bottom: 8px;
+}
+.mais-info {
+    color: red;
+    font-weight: 700;
+    font-size: 20px;
+}
+/* -----------------------**FOOTER**--------------------------- */
+footer {
+    background-color: black;
+    text-align: center;
+    font-size: 16px;
+    color: white;
+    padding: 32px;
+}
