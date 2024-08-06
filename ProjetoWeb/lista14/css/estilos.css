@@ -1,0 +1,98 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    background-color: black;
+}
+/* HEADER */
+header {
+    text-align: right;
+}
+header h1 {
+    background-color: black;
+    color: white;
+    padding: 15px;
+}
+header p {
+    background-color: gray;
+    color: white;
+    padding: 15px;
+    font-weight: bold;
+}
+nav ul {
+    text-align: center;
+    background-color: #7b7bfa;
+}
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a:link, nav ul li a:visited {
+    text-decoration: none;
+    color: white;
+    padding: 10px 40px 10px 40px;
+    display: inline-block;
+}
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* MAIN */
+main {
+    background-color: white;
+    width: 1200px;
+    padding: 30px;
+    margin: auto;
+}
+main > p {
+    line-height: 25px;
+    margin: 30px 0 30px 0;
+    text-align: justify;
+}
+div.imagemCentralizada {
+    text-align: center;
+}
+main img {
+    width: 600px;
+}
+main h2 {
+    margin-bottom: 20px;
+    transition: 0.5s;
+}
+main h2:first-of-type:hover {
+    letter-spacing: 5px;
+    transition: 0.5s;
+}
+main ul {
+    margin-left: 40px;
+}
+span.paragrafoSublinhado {
+    text-decoration: underline;
+}
+span.paragrafoItalico {
+    font-style: italic;
+}
+span.paragrafoTaxado {
+    text-decoration: line-through
+}
+main ul li p {
+    line-height: 30px;
+}
+/* FOOTER */
+footer {
+    background-color: gray;
+    text-align: center;
+    padding: 50px;
+    width: 100%;
+}
+footer p {
+    font-size: larger;
+    font-weight: bold;
+    color: white;
+}
+footer a {
+    color: rgb(204, 204, 240);
+    font-weight: normal;
+}
