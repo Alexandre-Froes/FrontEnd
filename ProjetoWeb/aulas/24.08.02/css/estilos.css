@@ -48,7 +48,7 @@ ul li {
 
 /* FACEBOOK */
 .facebook {
-    background-image: url('/24.08.02/imagens/face.png');
+    background-image: url('../imagens/face.png');
     transition: 0.5s;
 }
 .facebook:hover {
@@ -62,7 +62,7 @@ ul li {
 
 /* INSTAGRAM */
 .instagram {
-    background-image: url('/24.08.02/imagens/insta.png');
+    background-image: url('../imagens/insta.png');
     transition: 0.5s;
 }
 .instagram:hover {
@@ -84,7 +84,7 @@ ul li {
 
 /* TWITTER */
 .twitter {
-    background-image: url('/24.08.02/imagens/twitter.png');
+    background-image: url('../imagens/twitter.png');
     transition: 0.5s;
     color: #55acee;
 }
@@ -99,7 +99,7 @@ ul li {
 
 /* MAPS */
 .maps {
-    background-image: url('/24.08.02/imagens/maps.png');
+    background-image: url('../imagens/maps.png');
     transition: 0.5s;
 }
 .maps:hover {
@@ -112,7 +112,7 @@ ul li {
 
 /* YOUTUBE */
 .youtube {
-    background-image: url('/24.08.02/imagens/youtube.png');
+    background-image: url('../imagens/youtube.png');
     transition: 0.5s;
 }
 .youtube:hover {
