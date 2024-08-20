@@ -30,7 +30,6 @@ ul li {
     font-size: 15px;
     text-align: center;
     filter: saturate(0);
-    /* cursor: pointer; */
     transition: 0.5s;
     text-decoration: none;
     padding-bottom: 80px;

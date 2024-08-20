@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Oswald';
+}
+/* NAV */
+nav ul {
+    background-color: black;
+    text-align: right;
+}
+nav ul li {
+    display: inline-block;
+}
+nav ul li a {
+    transition: all .5s;
+    background-repeat: no-repeat;
+    background-position: left 4px center;
+    transition: all .5s;
+    display: inline-block;
+    text-decoration: none;
+    padding:  20px 40px;
+    margin-left: -4px;
+    color: white;
+}
+nav ul li a:hover {
+    transition: all .5s;
+    background-color: white;
+    color: black;
+    background-size: 30px;
+}
+nav ul li a.html5:hover {
+    background-image: url('/ProjetoWeb/lista16/img/html5.png');
+}
+nav ul li a.css3:hover {
+    background-image: url('/ProjetoWeb/lista16/img/css3.png');
+}
+nav ul li a.javascript:hover {
+    background-image: url('/ProjetoWeb/lista16/img/javascript.png');
+}
+
+/* MAIN */
+main section.web-design-titulo {
+    text-align: center;
+}
+main section > p:first-of-type {
+    color: red;
+    font-size: 20px;
+}
+main img.topo-imagem {
+    width: 100%;
+}
+main h1 {
+    font-size: 50px;
+    margin-top: 10px;
+}
+main section.web-design-imagens {
+    text-align: center;
+    background-color: #f0f0f0;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    margin: 60px auto;
+    width: 1200px;
+}
+.secao3Imagens div {
+    width: 33.33%;
+    padding: 20px;
+}
+.secao3Imagens img {
+    width: 70px;
+}
+.secao3Imagens h2 {
+    color: green;
+    font-size: 30px;
+    margin: 10px;
+}
+
+.divImagem {
+    width: 35%;
+}
+.divImagem img {
+    width: 400px;
+}
+.divTexto {
+    width: 65%;
+}
+.divTexto p {
+    margin: 10px;
+    text-align: justify;
+}
+
+footer {
+    background-color: black;
+    text-align: center;
+}
+footer p {
+    padding: 50px;
+    color: white;
+}
