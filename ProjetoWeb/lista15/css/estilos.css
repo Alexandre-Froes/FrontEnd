@@ -4,9 +4,6 @@
     padding: 0;
     font-family: 'Oswald';
 }
-body {
-    padding: 0px;
-}
 nav ul {
     position: fixed;
     top: 100px;
