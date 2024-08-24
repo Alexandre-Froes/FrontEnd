@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --cor-caixas: orange;
+}
+
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(6, 50px);
+    grid-template-rows: repeat(7, 50px);
+    grid-column-gap: px;
+    grid-row-gap: 0px;
+    }
+    
+.parent div:nth-of-type(1) { 
+    grid-area: 1 / 1 / 3 / 4; 
+    background-color: red;
+}
+.parent div:nth-of-type(2) { 
+    grid-area: 1 / 4 / 6 / 7; 
+    background-color: blue;
+}
+.parent div:nth-of-type(3) { grid-area: 3 / 1 / 6 / 4; }
+.parent div:nth-of-type(4) { grid-area: 6 / 1 / 8 / 3; }
+.parent div:nth-of-type(5) { grid-area: 6 / 3 / 8 / 5; }
+.parent div:nth-of-type(6) { grid-area: 6 / 5 / 8 / 7; } 
