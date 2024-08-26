@@ -1,0 +1,112 @@
+
+/* -=-=- SECAO HOLLOW KNIGHT -=-=- */
+
+.hollowKnight > div {
+    width: 80%;
+    margin: auto;
+    top: 100px;
+}
+
+    /* FORMATO DA SECTION */
+.hollowKnight > div {
+    height: auto;
+    margin: auto;
+}
+.hollowKnight > div > img {
+    position: relative;
+    width: 40%;
+    top: 20vw;
+    left: 10vh;
+}
+.hollowKnightFormato {
+    background: #0c2829;
+    min-width: 80%;
+    text-align: center;
+	height: auto;
+	transform: skew(0, -10deg);
+    box-shadow: rgba(0, 0, 0, 0.4) 0 -20px 60px;
+    color: rgb(226, 226, 226);
+    padding: 20px;
+    background-image: 
+        url(../img/hollowknight/fleurscanto.png), 
+        linear-gradient(#0c2829 30%, #111344, black);
+
+    background-repeat: no-repeat, repeat-x ;
+    background-position: 8px 8px;
+    background-size: 60%;
+    border: 10px solid rgba(51, 62, 64, 0.5)
+}
+.hollowKnightFormato > img {
+    position: relative;
+}
+.hollowKnightFormato h2 {
+    color: transparent;
+    font-size: 5vw;
+    text-shadow: 2px 2px 20px rgba(255, 255, 255, 0.3);
+    -webkit-text-stroke-width: 0.1rem;
+    -webkit-text-stroke-color:white;
+}
+
+    /* CONTEUDO DENTRO DO FORMATO */
+.hollowKnightConteudoReto {
+    transform: skew(0, 10deg);
+    padding: 50px;
+    margin-top: 40px;
+    background-image: url(../img/hollowknight/B_Radiance.png);
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: center 300px;
+    text-align: center;
+}
+.hollowKnightConteudoReto h3 {
+    font-size: 2.7vw;
+    margin-bottom: 20px;
+    font-weight: bold;
+    border-bottom: 30% white solid;
+    font-style: italic;
+}
+.hollowKnightConteudoReto p {
+    font-size: 1.2vw;
+    padding: 0 5vw;
+    margin-bottom: 30px;
+}
+.hollowKnightConteudoReto .fleurMaiorCentro {
+    width: 85%;
+    margin-bottom: 20px;
+}
+.hollowKnightConteudoReto .fleurMenorCentro {
+    width: 15%;
+    margin: 20px 0;
+}.hollowKnightConteudoReto .fleurCentro {
+    width: 25%;
+    margin: 20px 0;
+}
+.hollowKnightConteudoReto iframe {
+    width: 80%;
+    height: 32.5vw;
+    border: none;
+    margin: 20px 0;
+}
+.hollowKnightConteudoReto audio {
+    width: 80%;
+    display: inline-block;
+}
+.hollowKnight .container {
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.hollowKnight .container > img:nth-of-type(1) {
+    width: 80%;
+    border: 3px solid rgb(27, 27, 94);
+}
+.hollowKnight .container > img {
+    width: 47%;
+    border: 3px solid rgb(27, 27, 94);
+}
+.hollowKnightConteudoReto .fleurMenorCentro:last-of-type {
+    display: block;
+    margin: auto;
+}
