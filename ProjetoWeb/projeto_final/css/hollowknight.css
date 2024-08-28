@@ -1,3 +1,8 @@
+:root {
+    --BrancoPagina: #dfe3c9;
+    --corCreme: #d2d8be;
+    --corPreto:  #141204;
+}
 
 /* -=-=- SECAO HOLLOW KNIGHT -=-=- */
 
@@ -83,7 +88,7 @@
 }
 .hollowKnightConteudoReto iframe {
     width: 80%;
-    height: 32.5vw;
+    height: 12.5vh;
     border: none;
     margin: 20px 0;
 }
