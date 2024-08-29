@@ -243,10 +243,10 @@ a > div {
         }
 
     /* ARCO */
-    .containerJogosPuzzle34 > div:nth-of-type(2) h4 {
-        font-size: 2.35vw;
-        margin: 10px 0;
-    }
+        .containerJogosPuzzle34 > div:nth-of-type(2) h4 {
+            font-size: 2.35vw;
+            margin: 10px 0;
+        }
 
 
 /* * SECAO JOGOS HISTÓRIA */
