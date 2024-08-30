@@ -1,12 +1,11 @@
 :root {
+    --corPreto:  #141204;
     --BrancoPagina: #dfe3c9;
     --corCreme: #d2d8be;
-    --corPreto:  #141204;
     --corLaranja: #d4aa7d;
     --corLaranjaClaro: #dbb994;
     --corLaranjaClaro2: #e0c3a3;
     --corLaranjaClaro3: #ddc9b3;
-
 }
 body {
     font-family: Poppins, 'Arial';
@@ -14,6 +13,7 @@ body {
 
 /* ? -=-=-=- NAVBAR E HEADER -=-=-=- */
 nav ul {
+    width: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -56,7 +56,7 @@ a > div {
     opacity: 1;
 }
 
-/* PRIMEIRO ICONE XANDE // LOGO*/
+/* * PRIMEIRO ICONE XANDE // LOGO*/
 .navbarXande img {
     width: 250px;
     height: auto;
@@ -73,13 +73,13 @@ a > div {
     transition: all 0.5s;
 }
 
-/* SEGUNDO ICONE JOGOS PUZZLE // THE WITNESS */
+/* * SEGUNDO ICONE JOGOS PUZZLE // THE WITNESS */
 .navbarPuzzle img {
     border-radius: 4px;
     margin-right: 4px;
 }
 
-/* TERCEIRO ICONE JOGOS HISTORIA // CELESTE */
+/* * TERCEIRO ICONE JOGOS HISTORIA // CELESTE */
 @keyframes morangoCeleste {
     0% {top: 20px;}
     50% {top: -5px;}
@@ -103,27 +103,28 @@ a > div {
     text-align: center;
 }
 .caixaJogos {
-    width: 70%;
-    min-width: 900px;
+    width: 65%;
+    min-width: 720px;
     border-radius: 20px;
-    background-color: var(--corLaranja);
     margin: 100px auto;
     text-align: center;
 }
+.caixaJogos .container {
+    align-items: center;
+}
 .caixaJogos h2 {
     font-size: 3vw;
-    padding: 30px;
-    border-bottom: 5px solid var(--BrancoPagina);
+    margin-bottom: 5px;
 }
 .caixaJogos h2 {
+    cursor: default;
+    background-color: var(--corLaranja);
     text-align: center;
     padding: 15px 40px;
-    cursor: pointer;
     letter-spacing: 2px;
-    position:relative;
-    overflow:hidden;
+    position: relative;
+    overflow: hidden;
 }
-
 .caixaJogos h2:before {
     content: "";
     position: absolute;
@@ -133,14 +134,27 @@ a > div {
     left: 0;
     bottom: 0;
     transition: all .3s;
-    opacity: 0.3;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+    opacity: 0.1;
+}
+.caixaJogos h2:hover:before {
+    width: 100%;
+}
+.caixaJogos h3 {
+    padding: 10px 0;
+    display: block;
+    margin-bottom: 5px;
+    font-size: 2vw;
+    cursor: default;
+}
+.containerJogosPuzzle12 h4,
+.containerJogosPuzzle34 h4 {
+    cursor: default;
 }
 .descricaoJogos {
-    border-bottom: 5px solid var(--BrancoPagina);
+    margin-bottom: 5px;
     padding: 40px;
-    font-size: 1.1vw;
+    font-size: max(1em, 19px);
+    
 }
 .descricaoJogos:nth-of-type(1) {
     background-color: var(--corLaranjaClaro);
@@ -149,16 +163,13 @@ a > div {
     text-align: justify;
     margin-bottom: 10px;
 }
-.caixaJogos h2:hover:before {
-    width: 100%;
-}
 .containerJogosPuzzle12 {
     background-color: var(--corLaranjaClaro2);
-    border-bottom: 5px solid var(--BrancoPagina);
+    margin-bottom: 5px;
 }
 .containerJogosPuzzle34 {
     background-color: var(--corLaranjaClaro3);
-    border-bottom: 5px solid var(--BrancoPagina);
+    margin-bottom: 5px;
 }
 .containerJogosPuzzle12 > div,
 .containerJogosPuzzle34 > div {
@@ -172,28 +183,23 @@ a > div {
     width: 100%;
     box-shadow: 0px 10px 30px 15px rgba(0, 0, 0, 0.233);
 }
-.containerJogosPuzzle12 h4,
-.containerJogosPuzzle34 h4 {
-    cursor: default;
-}
-.containerJogosPuzzleImagem:hover {
-    scale: 1.009;
+.containerJogosPuzzleImagem:hover img {
+    transform: scale(1.03);
     cursor: pointer;
+    transition: all .5s;
 }
 .containerJogosPuzzleImagem {
     cursor: pointer;
     transition: all .5s;
 }
-.caixaJogos h3 {
-    padding: 10px 0;
-    display: block;
-    border-bottom: 5px solid var(--BrancoPagina);
-    font-size: 2vw;
+.containerJogosPuzzleImagem img {
+    transition: all .5s;
 }
 /* * Jogos de Puzzle */
     .caixaJogos h3:nth-of-type(1) {
         background-color: var(--corLaranjaClaro2);
     }
+
     /* BABA IS YOU */
         .babaisyouNome {
             width: 30% !important;
@@ -222,17 +228,18 @@ a > div {
             border-image-outset: 12px 14px 12px 14px;
             border-image-repeat: repeat repeat;
             border-image-source: url("../img/theWitness/thewitnessborda.png");
+            border-color: transparent;
+            border-width: 0px;
             border-style: solid;
             z-index: -1;
-            box-sizing: c;
             border-radius: 5px;
-            transition: all .5s;
             border-color: transparent;
+            transition: all .5s;
         }
 
 /* *Jogos de Estratégia */
-.caixaJogos h3:nth-of-type(2) {
-    background-color: var(--corLaranjaClaro3);
+    .caixaJogos h3:nth-of-type(2) {
+        background-color: var(--corLaranjaClaro3);
 }
     /* INSCRYPTION */
         .containerJogosPuzzle34 > div:nth-of-type(1) h4 {
@@ -253,4 +260,63 @@ a > div {
 .containercoluna {
     width: 100%;
     flex-direction: column;
+}
+
+
+
+
+
+
+
+
+/* celular */
+@media screen and (max-width: 720px) {
+
+    .navbarXande img {
+        width: 400px;
+        height: auto;
+    }
+    nav ul {
+        flex-direction: column;
+        padding: 20px;
+    }
+    nav ul li a {
+        font-size: 40px;
+        margin: 15px 0;
+    }
+
+    
+    .container {
+        flex-direction: column;
+    }
+    .caixaJogos {
+        min-width: 10px;
+        margin: 0 0;
+        width: 100%;
+    }
+
+    .caixaJogos h2 {
+        font-size: 8vw;
+    }
+    .caixaJogos h3 {
+        font-size: 7vw;
+    }
+
+    .descricaoJogos {
+        font-size: 2.9vw;
+    }
+
+
+    .containerJogosPuzzle12 > div:nth-of-type(2) h4 {
+        font-size: 7.5vw;
+    }
+    .containerJogosPuzzle12 > div:nth-of-type(2) h4 span {
+        font-size: 10vw;
+    }
+    .containerJogosPuzzle34 > div:nth-of-type(1) h4 {
+        font-size: 7vw;
+    }
+    .containerJogosPuzzle34 > div:nth-of-type(2) h4 {
+        font-size: 8vw;
+    }
 }
