@@ -8,23 +8,68 @@ body {
     background-color: black;
 }
 
-/* REGRAS GERAIS */
+/*
+LEGENDA
+
+01 - REGRAS GERAIS
+02 - HEADER E NAV
+03 - TODAS AS SEÇÕES
+04 - SEÇÃO01
+05 - SEÇÃO02
+06 - SEÇÃO03
+07 - SEÇÃO04
+08 - SEÇÃO05
+09 - SEÇÃO06
+10 - FOOTER
+*/
+
+/* 01 REGRAS GERAIS */
 .container {
     display: flex;
     flex-direction: row;
+    gap: 20px;
 }
 .container div {
     padding: 40px;
 }
+.btn-preto {
+    background-color: black;
+}
+.btn-azul {
+    background-color: rgb(0, 0, 77);
+}
 
-/* SEÇÃO TUDO :D */
+/* 02 HEADER E NAV */
+header img {
+    width: 100%;
+}
+nav ul {
+    background-color: rgb(0, 0, 77);
+    width: 100%;
+    text-align: center;
+}
+nav ul li {
+    display: inline-block;
+}
+nav ul li a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    padding: 20px 30px;
+    font-weight: bold;
+}
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* 03 SEÇÃO TUDO :D */
 main section {
     width: 1300px;
     padding: 50px;
     margin: auto;
 }
 main section:nth-of-type(odd) {
-    background-color: lightgray;
+    background-color: #dddddd;
 }
 main section:nth-of-type(even) {
     background-color: white;
@@ -45,14 +90,9 @@ main section button:hover {
     background-color: orangered;
     cursor: pointer;
 }
-.btn-preto {
-    background-color: black;
-}
-.btn-azul {
-    background-color: darkblue;
-}
 
-/* SEÇÃO 01 :O */
+
+/* 04 SEÇÃO 01 :O */
 
 main section h1 {
     font-size: xx-large;
@@ -63,7 +103,7 @@ main section p {
     text-align: justify;
 }
 
-/* SEÇÃO 02 :P */
+/* 05 SEÇÃO 02 :P */
 main section:nth-of-type(2) h2 {
     margin-bottom: 20px;
 }
@@ -74,7 +114,7 @@ main section:nth-of-type(2) .container > img {
     width: 40px;
 }
 
-/* SEÇÃO 03 */
+/* 06 SEÇÃO 03 */
 .servicos .container div {
     text-align: center;
     width: 100%;
@@ -83,18 +123,18 @@ main section:nth-of-type(2) .container > img {
     width: 90%;
 }
 
-/* SEÇÃO 04 */
+/* 07 SEÇÃO 04 */
 .quemSomos .container div {
     text-align: center;
 }
 
-/* SEÇÃO 05 */
+/* 08 SEÇÃO 05 */
 
 .slogan .container > button {
     margin-right: 5px;
 }
 
-/* SEÇÃO 06 */
+/* 09 SEÇÃO 06 */
 .containerColuna {
     flex-direction: column;
 
@@ -103,18 +143,15 @@ main section:nth-of-type(2) .container > img {
     margin-bottom: 5px;
     padding: 0px;
 }
-.palceholder > div:nth-of-type(1) {
-    width: 35%;
+.compromissos .container > div:nth-of-type(2) {
+    text-align: center;
 }
-.palceholder > div:nth-of-type(2) {
-    width: 65%;
-}
-.palceholder .container div > img {
-    width: 100%;
+.compromissos .container img {
+    width: 500px;
 }
 
 
-/* FOOTER */
+/* 10 FOOTER */
 footer {
     background-color: black;
     color: white;
