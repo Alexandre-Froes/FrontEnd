@@ -1,0 +1,50 @@
+/* global */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* celular */
+.container {
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid green;
+    width: 80vw;
+    text-align: center;
+}
+.container > div {
+    border: 2px solid black;
+    width: 100%;
+    height: 80px;
+    padding: 10px;
+    margin: 5px 0;
+    background-color: red;
+}
+p {
+    font-size: 200%;
+}
+
+/* tablet */
+@media screen and (min-width:768px) and (max-width:1024px) {
+    .container {
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    .container > div {
+        width: 50%;
+    }
+        
+}
+
+/* ? desktop */
+@media screen and (min-width:1024px) {
+    .container {
+        flex-direction: row;
+    }
+    .container > div {
+        height: 300px;
+        gap: 10px;
+        margin: 0 10px;
+    }
+}
