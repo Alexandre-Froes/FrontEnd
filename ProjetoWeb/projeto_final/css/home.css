@@ -262,18 +262,50 @@ a > div {
     flex-direction: column;
 }
 
+/* tablet */
+@media screen and (max-width: 1024px) and (min-width:720px) {
+    .caixaJogos h2 {
+        font-size: 3.5vw;
+    }
+    .caixaJogos h3 {
+        font-size: 2.7vw;
+    }
 
+    .descricaoJogos {
+        font-size: 1.8vw;
+    }
 
+    .containerJogosPuzzle12 > div,
+    .containerJogosPuzzle34 > div {
+        padding: 5px;
+        margin: inherit 10px;
+    }
 
+    .containerJogosPuzzle12 img,
+    .containerJogosPuzzle34 img {
+        width: 90%;
+    }
 
-
-
+    .containerJogosPuzzle12 > div:nth-of-type(2) h4 {
+        font-size: 3vw;
+    }
+    .containerJogosPuzzle12 > div:nth-of-type(2) h4 span {
+        font-size: 4vw;
+    }
+    .containerJogosPuzzle34 > div:nth-of-type(1) h4 {
+        font-size: 3vw;
+    }
+    .containerJogosPuzzle34 > div:nth-of-type(2) h4 {
+        font-size: 3vw;
+        margin-bottom: 2px;
+    }
+}
 
 /* celular */
 @media screen and (max-width: 720px) {
 
     .navbarXande img {
-        width: 400px;
+        width: 85vw;
         height: auto;
     }
     nav ul {
@@ -303,9 +335,13 @@ a > div {
     }
 
     .descricaoJogos {
-        font-size: 2.9vw;
+        font-size: 3.5vw;
     }
 
+    .containerJogosPuzzle12 > div,
+    .containerJogosPuzzle34 > div {
+        padding: 0px;
+    }
 
     .containerJogosPuzzle12 > div:nth-of-type(2) h4 {
         font-size: 7.5vw;
