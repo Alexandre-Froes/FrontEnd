@@ -127,13 +127,15 @@ a > div {
 }
 .caixaJogos h2 {
     cursor: default;
-    background-color: var(--Laranja);
     text-align: center;
     padding: 15px 40px;
     letter-spacing: 2px;
     position: relative;
     overflow: hidden;
     transition: all 0.2s;
+}
+.secaoJogosPuzzle .caixaJogos h2 {
+    background-color: var(--Laranja);
 }
 .caixaJogos h2:before {
     content: "";
@@ -157,8 +159,7 @@ a > div {
     cursor: default;
     transition: all 0.2s;
 }
-.containerJogosPuzzle12 h4,
-.containerJogosPuzzle34 h4 {
+.secaoJogosPuzzle .container h4 {
     cursor: default;
 }
 .descricaoJogos {
@@ -167,7 +168,7 @@ a > div {
     font-size: max(1em, 19px);
     transition: all 0.2s;
 }
-.caixaJogos:nth-of-type(1) .descricaoJogos {
+.secaoJogosPuzzle .descricaoJogos {
     background-color: var(--Laranja);
 }
 .descricaoJogos p:first-of-type {
@@ -178,22 +179,20 @@ a > div {
     text-align: justify;
     margin-bottom: 10px;
 }
-.containerJogosPuzzle12 {
+.secaoJogosPuzzle .container:nth-of-type(2) {
     background-color: var(--LaranjaClaro2);
     margin-bottom: 5px;
 }
-.containerJogosPuzzle34 {
+.secaoJogosPuzzle .container:nth-of-type(3) {
     background-color: var(--LaranjaClaro3);
     margin-bottom: 5px;
 }
-.containerJogosPuzzle12 > div,
-.containerJogosPuzzle34 > div {
+.secaoJogosPuzzle .container div {
     width: 80%;
     padding: 10px 40px;
     margin: 20px 0;
 }
-.containerJogosPuzzle12 img,
-.containerJogosPuzzle34 img {
+.secaoJogosPuzzle .container img {
     border-radius: 15px;
     width: 100%;
     box-shadow: 0px 10px 30px 15px rgba(0, 0, 0, 0.233);
@@ -229,6 +228,7 @@ a > div {
         transform: translate(-10px);
     }
 }
+
 /* * Jogos de Puzzle */
     .caixaJogos:nth-of-type(1) h3 {
         background-color: var(--LaranjaClaro2);
@@ -242,18 +242,14 @@ a > div {
             box-shadow: 0px 10px 30px 15px rgba(0, 0, 0, 0.233);
             margin-top: 20px;
         }
-        .containerJogosPuzzle12 > div:nth-of-type(1) > img:nth-of-type(2) {
-            box-shadow: 0px 10px 30px 15px rgba(0, 0, 0, 0.233);
-        }
-        
     /* THE WITNESS */
-        .containerJogosPuzzle12 > div:nth-of-type(2) h4 {
+        .secaoJogosPuzzle .container:nth-of-type(2) > div:nth-of-type(2) h4 {
             font-family: 'Times New Roman', Poppins, 'Arial';
             font-weight: 500;
             margin: 20px 0;
             font-size: 2.3vw;
         }
-        .containerJogosPuzzle12 > div:nth-of-type(2) h4 span {
+        .secaoJogosPuzzle .container:nth-of-type(2) > div:nth-of-type(2) h4 span {
             font-size: 3vw;
         }
         .JogosPuzzleTheWitnessImagem {
@@ -277,7 +273,7 @@ a > div {
     }
 
     /* INSCRYPTION */
-        .containerJogosPuzzle34 > div:nth-of-type(1) h4 {
+        .secaoJogosPuzzle .caixaJogos > .container:nth-of-type(3) > div:nth-of-type(1) h4 {
             font-family: 'Inscryption', Poppins, 'Arial';
             color: #c4803c;
             font-size: 3vw;
@@ -285,7 +281,7 @@ a > div {
         }
 
     /* ARCO */
-        .containerJogosPuzzle34 > div:nth-of-type(2) h4 {
+        .secaoJogosPuzzle > .caixaJogos > .container:nth-of-type(3)> div:nth-of-type(2) h4 {
             font-size: 2.35vw;
             margin: 10px 0;
         }
@@ -370,27 +366,25 @@ a > div {
         font-size: 1.8vw;
     }
 
-    .containerJogosPuzzle12 > div,
-    .containerJogosPuzzle34 > div {
+    .container > div {
         padding: 5px;
         margin: inherit 10px;
     }
 
-    .containerJogosPuzzle12 img,
-    .containerJogosPuzzle34 img {
+    .container > div {
         width: 90%;
     }
 
-    .containerJogosPuzzle12 > div:nth-of-type(2) h4 {
+    .container:nth-of-type(2) > div:nth-of-type(2) h4 {
         font-size: 3vw;
     }
-    .containerJogosPuzzle12 > div:nth-of-type(2) h4 span {
+    .container:nth-of-type(2) > div:nth-of-type(2) h4 span {
         font-size: 4vw;
     }
-    .containerJogosPuzzle34 > div:nth-of-type(1) h4 {
+    .container:nth-of-type(3) > div:nth-of-type(1) h4 {
         font-size: 3vw;
     }
-    .containerJogosPuzzle34 > div:nth-of-type(2) h4 {
+    .container:nth-of-type(3) > div:nth-of-type(2) h4 {
         font-size: 3vw;
         margin-bottom: 2px;
     }
@@ -414,7 +408,7 @@ a > div {
 
     
     .container {
-        flex-direction: column;
+        flex-wrap: wrap;
     }
     .caixaJogos {
         min-width: 10px;
@@ -433,21 +427,20 @@ a > div {
         font-size: 3.5vw;
     }
 
-    .containerJogosPuzzle12 > div,
-    .containerJogosPuzzle34 > div {
+    .container > div {
         padding: 0px;
     }
 
-    .containerJogosPuzzle12 > div:nth-of-type(2) h4 {
+    .container:nth-of-type(2) > div:nth-of-type(2) h4 {
         font-size: 7.5vw;
     }
-    .containerJogosPuzzle12 > div:nth-of-type(2) h4 span {
+    .container:nth-of-type(2) > div:nth-of-type(2) h4 span {
         font-size: 10vw;
     }
-    .containerJogosPuzzle34 > div:nth-of-type(1) h4 {
+    .container:nth-of-type(3) > div:nth-of-type(1) h4 {
         font-size: 7vw;
     }
-    .containerJogosPuzzle34 > div:nth-of-type(2) h4 {
+    .container:nth-of-type(3) > div:nth-of-type(2) h4 {
         font-size: 8vw;
     }
 }

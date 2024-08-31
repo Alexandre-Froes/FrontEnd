@@ -23,6 +23,7 @@ body {
     display: flex;
     flex-direction: row;
     transition: all 0.2s;
+    justify-content: center;
 }
 .container > div {
     width: 100%;

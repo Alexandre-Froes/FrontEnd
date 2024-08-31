@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* celular */
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
+
+    border: 2px solid black;
+}
+.apresentacao > div > div {
+    width: 100%;
+    border: 2px solid red;
+}
+
+
+/* tablet */
+@media screen and (min-width: 768px) and (max-width:1023px) {
+    .apresentacao > div > div {
+        width: 100%;
+        border: 2px solid red;
+        background-color: green;
+    }
+}
+/* desktop */
+@media screen and (min-width:1024px) {
+    .apresentacao > div > div {
+        flex-direction: row;
+    }
+    .apresentacao > div > div {
+        width: 100%;
+        border: 2px solid red;
+        background-color: yellow;
+    }
+}
