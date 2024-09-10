@@ -1,0 +1,157 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+nav ul {
+    background-color: wheat;
+    text-align: center;
+}
+nav ul li {
+    display: inline-block;
+}
+nav ul li a {
+    display: inline-block;
+    padding: 20px;
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+    margin-left: -4px;
+    border-top: 3px solid wheat;
+}
+nav ul li a:hover {
+    border-top: 3px solid black;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    width: 1200px;
+}
+
+
+/* SECOES */
+section {
+    text-align: center;
+    padding: 40px 0;
+}
+h2 {
+    color: orange;
+}
+section > div {
+    margin: auto;
+}
+section p {
+    line-height: 150%;
+}
+
+
+.introducao {
+    background-color: black;
+}
+.introducao > div {
+    background-color: white;
+    border-radius: 60px;
+    border: 20px orange solid;
+    padding: 40px;
+}
+.introducao > div > div:first-of-type {
+    width: 60%;
+    text-align: justify;
+}
+.introducao > div > div:nth-of-type(2) {
+    width: 40%;
+}
+.introducao > div > div:first-of-type {
+    padding-right: 100px;
+}
+.introducao h1 {
+    margin: 15px 0;
+}
+.introducao button {
+    padding: 10px;
+    width: 150px;
+    margin: 15px 5px 0 0;
+    background-color: orangered;
+    border-radius: 5px;
+    color: white;
+    border: none;
+}
+.introducao button:hover {
+    background-color: orange;
+}
+
+.produtos > div {
+    justify-content: center;
+    align-items: center;
+    margin: 40px auto;
+    flex-direction: column;
+    text-align: center;
+}
+.produtos > div > div p {
+    margin: 30px 0;
+}
+
+.conhecer {
+    background-color: #ececec;
+}
+.conhecer > div > div {
+    width: 33.3%;
+    padding: 30px;
+}
+.conhecer > div > div p {
+    margin: 10px 0;
+    text-align: justify;
+}
+.conhecer > div > div h3 {
+    text-align: left;
+}
+
+.mala {
+    padding: 80px 0;
+}
+.mala > div > div:first-of-type {
+    width: 30%;
+}
+.mala > div > div p {
+    text-align: justify;
+    margin: 30px 60px;
+}
+.mala summary {
+    text-align: left;
+    padding: 0 60px;
+    color: orange;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.videos {
+    background-color: wheat;
+}
+.videos > div > div {
+    width: 50%;
+}
+.videos > div > div > iframe {
+    width: 600px;
+    height: 350px;
+}
+.videos > div > div > iframe:nth-of-type(1) {
+    padding-right: 60px;
+}
+
+.videos > div > div > iframe:nth-of-type(2) {
+    padding-left: 60px;
+}
+.videos h2 {
+    color: orangered;
+    margin: 30px 0;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 50px;
+    text-align: center;
+}
