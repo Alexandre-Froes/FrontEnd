@@ -1,30 +1,195 @@
-/* -=-=- SECAO HOLLOW KNIGHT -=-=- */
-
-.hollowKnight > div {
-    width: 80%;
-    margin: auto;
-    top: 100px;
-}
-
-    /* FORMATO DA SECTION */
-.hollowKnight > div {
-    height: auto;
-    margin: auto;
-}
-.hollowKnight > div > img {
-    position: relative;
-    width: 40%;
-    top: 20vw;
-    left: 10vh;
-}
-.hollowKnightFormato {
-    background: #0c2829;
-    min-width: 80%;
+section > div > div {
     text-align: center;
 	height: auto;
-	transform: skew(0, -10deg);
     box-shadow: rgba(0, 0, 0, 0.4) 0 -20px 60px;
     color: rgb(226, 226, 226);
+}
+section:nth-of-type(odd) > div > div {
+	transform: skew(0, 10deg);
+}
+section:nth-of-type(even) > div > div {
+	transform: skew(0, -10deg);
+}
+section > div > img {
+    position: relative;
+}
+section {
+    margin: 100px auto;
+}
+section > div {
+    width: 65%;
+    margin: auto;
+    text-align: center;
+}
+
+.celeste {
+    font-family: 'Celeste', Aral;
+}
+.celeste > div > img {
+    width: 40%;
+    top: 10vw;
+    left: 16vh;
+    transform: rotate(20deg);
+}
+
+.celeste > div > div {
+    background-color: rgb(214, 177, 255);
+    padding: 40px;
+}
+.celeste > div > div > h2 div {
+    display: inline-block;
+}
+/* .celeste > div > div > h2 div > div {
+    animation-name: flutuando;
+    animation-duration: 2.4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin: -3px;
+    font-size: 5vw;
+    color: #81ebf3;
+    font-weight: bolder;
+    font-style: italic;
+    -webkit-text-stroke-color: #6b5c86;
+    -webkit-text-stroke-width: 0.2vw;
+}
+.celeste h2 > div > div:nth-of-type(2) {  
+    animation-delay: .2s;
+}
+.celeste h2 > div > div:nth-of-type(3) {  
+    animation-delay: .4s;
+}
+.celeste h2 > div > div:nth-of-type(4) {  
+    animation-delay: .6s;
+}
+.celeste h2 > div > div:nth-of-type(5) {  
+    animation-delay: .8s;
+}
+.celeste h2 > div > div:nth-of-type(6) {  
+    animation-delay: 1s;
+}
+.celeste h2 > div > div:nth-of-type(7) {  
+    animation-delay: 1.2s;
+} 
+                        <!-- <h2>
+                        <div>
+                            <div>C</div>
+                            <div>E</div>
+                            <div>L</div>
+                            <div>E</div>
+                            <div>S</div>
+                            <div>T</div>
+                            <div>E</div>
+                        </div>
+                    </h2> -->
+*/
+
+.celeste > div > div > div {
+    transform: skew(0, -10deg);
+    padding: 30px;
+    color: #09223E;
+    font-size: 1.3vw;
+}
+@keyframes rodando {   
+    0% {transform: rotate(2deg);}
+    50% {transform: rotate(-2deg);}
+    100% {transform: rotate(2deg);}
+}
+.celeste > div > div > div > img {
+    animation-name: rodando;
+    animation-iteration-count: infinite;
+    animation-duration: 4s;
+    transform: skew(0, 2deg);
+    padding: 30px;
+    width: 100%;
+}
+.celeste iframe {
+    margin: 50px 0;
+}
+.celeste > div > div > div > div:nth-of-type(2) > img:nth-of-type(1) {
+    width: 100%;
+    top: 0;
+    position: relative
+}
+.celeste > div > div > div > div:nth-of-type(2) > p {
+    padding: 0 100px;
+    position: relative;
+    top: -9.5vw;
+    font-size: 1.2vw;
+    color: white;
+    z-index: 1;
+}
+.celesteConteudo > div:nth-of-type(1)  {
+    margin-top: -50px;
+}
+.celesteConteudo > div  {
+    align-items: center;
+    margin: 50px 0;
+}
+.celesteConteudo > div > div {
+    width: 50%;
+    padding: 10px;
+}
+.celesteConteudo > div > div p {
+    padding: 10px;
+    cursor: default;
+}
+.celesteConteudo > div > div > img {
+    width: 100%;
+    border-radius: 10px;
+    transition: all 0.5s;
+}
+.celesteConteudo > div > div > img:hover {
+    transform: scale(1.02);
+    box-shadow: black 0px 0px 50px 3px;
+}
+.celesteConteudo > div {
+    background-color: rgba(255, 255, 255, 0.151);
+    border-radius: 10px;
+    padding: 10px;
+}
+.celesteConteudo > div:nth-of-type(3),
+.celesteConteudo > div:nth-of-type(4) {
+    flex-wrap: wrap;
+}
+.celesteConteudo > div:nth-of-type(3) > div:nth-of-type(1),
+.celesteConteudo > div:nth-of-type(4) > div:nth-of-type(1) {
+    width: 100%;
+}
+.celesteConteudo > div:nth-of-type(4) > div:nth-of-type(2),
+.celesteConteudo > div:nth-of-type(4) > div:nth-of-type(3),
+.celesteConteudo > div:nth-of-type(4) > div:nth-of-type(4) {
+    width: 30%;
+    background-color: rgba(255, 255, 255, 0.151);
+    border-radius: 10px;
+    margin: 0 10px;
+}
+.celesteConteudo > div:last-of-type {
+    margin-bottom: 100px;
+}
+
+@keyframes flutuando {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 20px); }
+    100%   { transform: translate(0, 0px); }   
+}
+
+/* ? -=-=- SECAO HOLLOW KNIGHT -=-=- */
+.hollowKnight {
+    font-family: 'Times New Roman', 'Arial';
+    margin-top: -15vw;
+}
+
+.hollowKnight > div {
+    top: 100px;
+    text-align: left;
+}
+.hollowKnight > div > img {
+    width: 40%;
+    top: 17vw;
+    left: 10vh;
+}
+.hollowKnight > div > div {
+    background: #0c2829;
     padding: 20px;
     background-image: 
         url(../img/hollowknight/fleurscanto.png), 
@@ -35,60 +200,88 @@
     background-size: 60%;
     border: 10px solid rgba(51, 62, 64, 0.5)
 }
-.hollowKnightFormato > img {
+
+.hollowKnight > div > div > img {
     position: relative;
 }
-.hollowKnightFormato h2 {
+.hollowKnight > div > div h2 {
+    cursor: default;
     color: transparent;
     font-size: 5vw;
     text-shadow: 2px 2px 20px rgba(255, 255, 255, 0.3);
     -webkit-text-stroke-width: 0.1rem;
     -webkit-text-stroke-color:white;
+    transition: all 1s;
+}
+.hollowKnight > div > div h2:hover {
+    text-shadow: 2px 2px 20px rgba(255, 255, 255, 0.644);
+    -webkit-text-stroke-width: 0.1rem;
+    -webkit-text-stroke-color:white;
 }
 
     /* CONTEUDO DENTRO DO FORMATO */
-.hollowKnightConteudoReto {
+.hollowKnight > div > div > div {
     transform: skew(0, 10deg);
     padding: 50px;
     margin-top: 40px;
     background-image: url(../img/hollowknight/B_Radiance.png);
     background-size: 60%;
     background-repeat: no-repeat;
-    background-position: center 300px;
+    background-position: center 100vh;
     text-align: center;
 }
-.hollowKnightConteudoReto h3 {
+.hollowKnight > div > div > div > h3 {
     font-size: 2.7vw;
     margin-bottom: 20px;
     font-weight: bold;
     border-bottom: 30% white solid;
     font-style: italic;
+    cursor: default;
 }
-.hollowKnightConteudoReto p {
+.hollowKnight > div > div > div > h3 > span {
+    transition: all 4s;
+}
+@keyframes esquecido {
+    0% {color: white;}
+    100% {color: transparent;}
+}
+.hollowKnight > div > div > div > h3:nth-last-of-type(2):hover > span {
+    animation-name: esquecido;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+@keyframes corrompido {
+    0% {color: orange;}
+    100% {color: transparent;}
+}
+.hollowKnight > div > div > div > h3:nth-last-of-type(1):hover > span {
+    animation-name: corrompido;
+}
+.hollowKnight > div > div > div > p {
     font-size: 1.2vw;
     padding: 0 5vw;
     margin-bottom: 30px;
 }
-.hollowKnightConteudoReto .fleurMaiorCentro {
+.hollowKnight > div > div > div > .fleurMaiorCentro {
     width: 85%;
     margin-bottom: 20px;
 }
-.hollowKnightConteudoReto .fleurMenorCentro {
+.hollowKnight > div > div > div > .fleurMenorCentro {
     width: 15%;
     margin: 20px 0;
-}.hollowKnightConteudoReto .fleurCentro {
+}.hollowKnight > div > div > div > .fleurCentro {
     width: 25%;
     margin: 20px 0;
 }
-.hollowKnightConteudoReto iframe {
+.hollowKnight > div > div > div iframe {
     width: 80%;
-    height: 12.5vh;
+    height: 60vh;
     border: none;
     margin: 20px 0;
 }
-.hollowKnightConteudoReto audio {
-    width: 80%;
-    display: inline-block;
+.hollowKnight > div > div > div > audio {
+    width: 60%;
+    display: inline-block;  
 }
 .hollowKnight .container {
     justify-content: center;
@@ -104,8 +297,22 @@
 .hollowKnight .container > img {
     width: 47%;
     border: 3px solid rgb(27, 27, 94);
+    transition: all .5s;
 }
-.hollowKnightConteudoReto .fleurMenorCentro:last-of-type {
+.hollowKnight .container > img:hover {
+    transform: scale(1.02);
+    box-shadow: rgba(255, 255, 255, 0.315) 0px 0px 50px 3px;
+
+}
+.hollowKnight > div > div > div > .fleurMenorCentro:last-of-type {
     display: block;
     margin: auto;
+}
+.steam a {
+    font-size: 1vw;
+}
+.steam img {
+    height: 40px;
+    width: 40px;
+    margin: 10px;
 }

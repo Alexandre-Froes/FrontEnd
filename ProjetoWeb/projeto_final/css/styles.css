@@ -30,6 +30,10 @@
     font-family: isaac;
     src: url(../fontes/isaac/upheavtt.ttf);
 }
+@font-face {
+    font-family: celeste;
+    src: url(../fontes/celeste/Renogare-Regular.otf);
+}
 
 * {
     padding: 0;
