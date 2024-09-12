@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+main section {
+    width: 100%;
+    padding: 100px;
+}
+section > div {
+    width: 70%;
+    margin: auto;
+    padding: 40px;
+    text-align: center;
+    color: white;
+}
+section > div > h2 {
+    font-size: 4vw;
+}
+section > div > p {
+    font-size: 0.9vw;
+    margin: 20px 0;
+    padding: 0 40px;
+}
+section > div > iframe {
+    width: 80%;
+    height: 60vh;
+    border: none;
+    margin: 20px 0;
+}
+section > div > div img {
+    width: 100%;
+    transition: all .5s;
+    border-radius: 2px;
+}
+section > div > div img:hover {
+    transform: scale(1.02);
+    box-shadow: rgba(255, 255, 255, 0.082) 0px 0px 50px 3px;
+}
+.isaac {
+    background-color: rgb(133, 113, 77);
+    background-image: 
+        url(../img/isaac/isaacitens.png),
+        linear-gradient(230deg, rgb(133, 113, 77), rgb(116, 88, 39), rgb(134, 96, 39));
+    background-position: 0;
+    background-repeat: repeat;
+    padding-bottom: 300px;
+}
+.isaac > div > img {
+    width: 70%;
+    animation: rodando 4s infinite;
+}
+.isaac > div > img:first-of-type {
+    -webkit-filter: drop-shadow(5px 5px 5px #222);
+    filter: drop-shadow(5px 5px 5px #222);
+    animation: rodando 4s infinite;
+}
+.isaac > div > img:nth-of-type(4) {
+    width: 50%;
+}
+.isaac > div {
+    background-color: rgb(65, 62, 56);
+}
+.isaac h2,
+.isaac h3 {
+    font-family: isaac, Poppins;
+    font-weight: normal;
+    font-size: 3vw;
+}
+.isaac > div > div {
+    flex-wrap: wrap;
+}
+.isaac > div > div img {
+    width: 45%;
+    margin: 10px;
+}
+
+.isaac > div > div:nth-of-type(3) {
+    flex-wrap: nowrap;
+}
+.isaac > div > div:nth-of-type(3) > img {
+    width: 30%;
+}
+.isaac > div > div:nth-of-type(3) > img:hover {
+    box-shadow: none;
+}
+.isaac > div > div:nth-of-type(4) > div {
+    width: 50%;
+}
+.isaac .steam a {
+    font-family: isaac;
+    color: white;
+}
+
+.deadCells {
+    background-color: rgb(15, 16, 41);
+    margin-top: -100px;
+    box-shadow: rgba(0, 0, 0, 0.603) 0 -30px 30px 3px;
+    background-image: 
+        linear-gradient(230deg, rgb(15, 16, 41), rgb(18, 7, 121), rgb(0, 4, 43));
+    padding-bottom: 300px;
+}
+.deadCells > div {
+    background-color: rgb(78, 27, 27);
+}
+.deadCells > div > img:nth-of-type(1){
+    width: 100%;
+}
+.deadCells > div > img:nth-of-type(1):hover{
+    box-shadow: none;
+}
+.deadCells > div p {
+    font-size: 1.3vw;
+}
+.deadCells > div img {
+    width: 90%;
+    transition: all .5s;
+    border-radius: 2px;
+}
+.deadCells > div img:hover {
+    transform: scale(1.02);
+    box-shadow: rgba(255, 255, 255, 0.082) 0px 0px 50px 3px;
+}
+.deadCells .steam a {
+    color: white;
+}
+.deadCells .steam img {
+    width: auto;
+}

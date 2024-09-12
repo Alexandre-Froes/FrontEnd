@@ -33,6 +33,10 @@ section > div {
 .celeste {
     font-family: 'Celeste', Aral;
     margin-top: -100px;
+    background-color: palevioletred;
+    background-image: linear-gradient(150deg, palevioletred, rgb(240, 87, 219),rgb(61, 8, 54) );
+    margin-bottom: -100px;
+    padding-bottom: 220px;
 }
 .celeste > div > img {
     width: 40%;
@@ -87,11 +91,6 @@ section > div {
     padding: 30px;
     color: #09223E;
     font-size: 1.3vw;
-}
-@keyframes rodando {   
-    0% {transform: rotate(2deg);}
-    50% {transform: rotate(-2deg);}
-    100% {transform: rotate(2deg);}
 }
 .celeste > div > div > div > img {
     animation-name: rodando;
@@ -149,6 +148,9 @@ section > div {
     border-radius: 10px;
     padding: 10px;
 }
+.celeste audio {
+    width: 100%;
+}
 .celesteConteudo > div:nth-of-type(3),
 .celesteConteudo > div:nth-of-type(4) {
     flex-wrap: wrap;
@@ -178,11 +180,14 @@ section > div {
 /* ? -=-=- SECAO HOLLOW KNIGHT -=-=- */
 .hollowKnight {
     font-family: 'Times New Roman', 'Arial';
-    margin-top: -15vw;
+    background-color: #00191a;
+    padding-bottom: 200px;
+    z-index: -1;
+    background-image: linear-gradient(150deg, #00191a, rgb(2, 28, 46),rgb(2, 10, 59) );
 }
-
 .hollowKnight > div {
     top: 100px;
+    margin-top: -150px;
     text-align: left;
 }
 .hollowKnight > div > img {
@@ -317,7 +322,11 @@ section > div {
 
 .terraria {
     font-family: terraria, Arial;
-    
+    background-color: rgb(191, 229, 255);
+    padding-bottom: 200px;
+    margin: -180px 0;
+    z-index: -1;
+    background-image: linear-gradient(150deg, #cefdff, rgb(164, 223, 231),rgb(160, 173, 255) );
 }
 .terraria > div > div {
     box-shadow: none;
@@ -393,16 +402,27 @@ section > div {
 }
 .terraria > div > div > div > div:nth-of-type(1) {
     background-color: lightblue;
+    background-image: linear-gradient(180deg, rgb(82, 212, 255),  black);
     color: black;
 }
+.terraria .container > div {
+    background-image: linear-gradient(200deg, rgb(36, 145, 36), rgb(32, 160, 32));
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+}
+
 .terraria > div > div > div > div:nth-of-type(2) {
     background-color: rgb(102, 102, 102);
+    background-image: linear-gradient(200deg, rgb(102, 102, 102), rgb(71, 71, 71), rgb(19, 18, 18), rgb(32, 7, 7));
 }
 .terraria > div > div > div > div:nth-of-type(3) {
-    background-color: rgb(136, 18, 18)
+    background-color: rgb(136, 18, 18);
+    background-image: linear-gradient(200deg, red, rgb(117, 8, 8), rgb(63, 3, 3) );
 }
 .terraria > div > div > div > div:nth-of-type(4) {
-    background-color: lightskyblue
+    background-color: lightskyblue;
+    background-image:   linear-gradient(250deg, rgb(32, 134, 168), lightskyblue);
 }
 
 /* teste de css pq o githubn funciona */

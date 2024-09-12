@@ -103,17 +103,101 @@ section img:hover {
     display: block;
     border-bottom: dotted white 5px;
 }
-.baba span:nth-of-type(1) {
+.baba > p {
+    color: white;
+    font-size: 1vw;
+    border-bottom: dotted white 5px;
+    padding-bottom: 20px;
+}
+.babaTitulo {
     color: #d9386b;
     font-weight: 500;
 }
-/* .baba img {
+.baba img {
     box-shadow: none;
-    background-color: #080808;
-    padding: 10px;
-    border-radius: 20px;
-    width: 40%;
-} */
+    width: 100%;
+    margin: 20px 0;
+}
+.baba > div:nth-of-type(1) {
+    width: 200px;
+    margin: auto;
+    flex-wrap: wrap;
+    transform: translate(-14px);
+}
+.baba > div:nth-of-type(1) > div > img:nth-of-type(1) {  
+    width: 63%;
+}
+.baba > div:nth-of-type(1) > div > img:nth-of-type(2) {
+    width: 30%;
+    transform: translate(30px);
+}
+.babaBranco > img:nth-of-type(2) {
+    transform: translate(0px) !important;
+} 
+.babaPersonagem img {
+    width: 50px;
+    height: 50px;
+}
+.babaPersonagem {
+    margin: auto;
+    height: 100%;
+    width: 100px !important;
+    background-position: 0px 0px ;
+    background-image: url(../img/babaIsYou/babapersonagem.gif);
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: all .5s;
+}
+.baba > div:nth-of-type(1) > div:nth-of-type(2):active > img:nth-of-type(2) {transform: translate(0px); } 
+.baba > div:nth-of-type(1) > div:nth-of-type(2):active ~ .babaPersonagem {background-image:url(../img/babaIsYou/babaazul.gif)}
+.baba > div:nth-of-type(1) > div:nth-of-type(2):active ~ .babaBranco {transform: translate(30px) !important;}
 
+.baba > div:nth-of-type(1) > div:nth-of-type(3):active > img:nth-of-type(2) {transform: translate(0px); } 
+.baba > div:nth-of-type(1) > div:nth-of-type(3):active ~ .babaPersonagem {background-image:url(../img/babaIsYou/babalvermelho.gif)}
+.baba > div:nth-of-type(1) > div:nth-of-type(3):active ~ .babaBranco {transform: translate(30px) !important;}
 
-/* teste o github é mto ruim mds */
+.baba > div:nth-of-type(1) > div:nth-of-type(4):active > img:nth-of-type(2) {transform: translate(0px); } 
+.baba > div:nth-of-type(1) > div:nth-of-type(4):active ~ .babaPersonagem {background-image:url(../img/babaIsYou/babaverde.gif)}
+.baba > div:nth-of-type(1)> div:nth-of-type(4):active ~ .babaBranco {transform: translate(30px) !important;}
+
+.baba > div:nth-of-type(2) {
+    flex-wrap: wrap;
+
+}
+.baba > div:nth-of-type(2) > img {
+    width: 100%;
+    margin: 10px;
+    border-radius: 10px;
+}
+.baba .steam img {
+    width: auto;
+    margin: 0;
+}
+
+.witness {
+    background-color: #7ab2c4;
+}
+.witness h2 {
+    font-size: 4vw;
+}
+.witness h2 span {
+    font-size: 6vw;
+}
+.witness > img {
+    border-image-slice: 80 80 80 80;
+    border-image-width: 20px 20px 20px 20px;
+    border-image-outset: 12px 14px 12px 14px;
+    border-image-repeat: repeat repeat;
+    border-image-source: url("../img/theWitness/thewitnessborda.png");
+    border-color: transparent;
+    border-width: 0px;
+    border-style: solid;
+    z-index: -1;
+    border-radius: 5px;
+    border-color: transparent;
+    transition: all .5s;
+}
+.witness > div > img {
+    width: 45%;
+    margin: 5px;
+}
