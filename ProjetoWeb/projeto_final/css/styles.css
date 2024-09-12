@@ -113,8 +113,9 @@ a > div {
 
 /* XANDE // LOGO*/
 .navbarXande img {
-    width: 250px;
+    width: 220px;
     height: auto;
+    padding: 0;
 }
 
 .navbarXande img:hover {
