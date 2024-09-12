@@ -150,15 +150,6 @@
     }
 
 /* 2.1.2 THE WITNESS */
-    .secaoJogosPuzzle div:nth-of-type(2) > div:nth-of-type(2) h4 {
-        font-family: 'Times New Roman', Poppins, 'Arial';
-        font-weight: 500;
-        margin: 20px 0;
-        font-size: 2.3vw;
-    }
-    .secaoJogosPuzzle div:nth-of-type(2) > div:nth-of-type(2) h4 span {
-        font-size: 3vw;
-    }
     .JogosPuzzleTheWitnessImagem {
         border-image-slice: 80 80 80 80;
         border-image-width: 20px 20px 20px 20px;

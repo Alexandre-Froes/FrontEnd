@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+section {
+    font-family: Poppins;
+    margin: 100px auto;
+    width: 70%;
+    background-color: orange;
+    text-align: center;
+    padding: 50px;
+    border-radius: 30px;
+}
+section h2 {
+    font-size: 4vw;
+    cursor: default;
+    font-weight: bolder;
+}
+section iframe {
+    width: 80%;
+    height: 60vh;
+    border: none;
+    margin: 50px 0;
+}
+section p {
+    font-size: 1.3vw;
+    width: 80%;
+    margin: 30px auto;
+    cursor: default;
+    font-weight: bold;
+}
+section img {
+    width: 80%;
+    margin: 40px 0;
+    transition: all .5s;
+    box-shadow: rgba(255, 255, 255, 0.082) 0px 0px 50px 3px;
+}
+section img:hover {
+    transform: scale(1.02);
+}
+
+.arco > img {
+    width: 60%;
+}
+
+.inscryption .glitch:nth-of-type(1) {
+    font-family: HeavyWei, Arial;
+    font-size: calc(1.3vw + 10px);
+}
+.inscryptionTitulo {
+    font-family: 'Inscryption', Poppins, 'Arial';
+    color: #c4803c;
+}
+.inscryption {
+    background-color: #010a11;
+}
+.inscryption p {
+    color: #c4803c;
+}
+.inscryption ul {
+    text-align: left;
+    margin: 10px auto;
+    width: 80%;
+}
+.inscryption ul li img {
+    width: 100%;
+}
+.inscryption ul li:nth-of-type(2) div {
+    height: 100%;
+    width: 100%;
+    background-position: -1px 40px;
+    background-image: url(../img/inscryption/leshyrelogio.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: all .5s;
+}
+.inscryption ul li:nth-of-type(2) div:active {
+    background-image: url(../img/inscryption/relogioativo.png);
+}
+.inscryption ul li:nth-of-type(2) div:hover {
+    transform: scale(1.1);
+}
+.inscryption ul li:nth-of-type(2) div:hover img {
+    transform: scale(1);
+}
+.inscryption li::marker {
+    color: white;
+}
+.inscryption ul p {
+    margin: 0 0;
+}
+.inscryption > div:last-of-type {
+    opacity: 0.01;
+    font-style: italic;
+}
+
+.baba {
+    background-color: #080808;
+}
+.baba h2 {
+    color: white;
+    font-weight: 300;
+    width: fit-content;
+    margin: auto;
+    display: block;
+    border-bottom: dotted white 5px;
+}
+.baba span:nth-of-type(1) {
+    color: #d9386b;
+    font-weight: 500;
+}
+/* .baba img {
+    box-shadow: none;
+    background-color: #080808;
+    padding: 10px;
+    border-radius: 20px;
+    width: 40%;
+} */
+
+.witness {
+    
+}
