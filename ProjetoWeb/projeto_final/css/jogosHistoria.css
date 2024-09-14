@@ -15,7 +15,7 @@ section:nth-of-type(even) > div > div {
 section:nth-of-type(odd) > div > div > div {
 	transform: skew(0, -10deg);
 }
-section:nth-of-type(even) > div > div > div{
+section:nth-of-type(even) > div > div > div {
 	transform: skew(0, 10deg);
 }
 section > div > img {
@@ -23,6 +23,7 @@ section > div > img {
 }
 section {
     margin: 100px auto;
+    font-family: Poppins;
 }
 section > div {
     width: 65%;
@@ -424,5 +425,3 @@ section > div {
     background-color: lightskyblue;
     background-image:   linear-gradient(250deg, rgb(32, 134, 168), lightskyblue);
 }
-
-/* testecss */

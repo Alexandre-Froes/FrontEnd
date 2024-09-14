@@ -44,10 +44,10 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: Poppins, 'Arial';
 }
 body {
     background-color: var(--BrancoPagina);
-    font-family: Poppins, 'Arial';
 }
 iframe {
     border: none;
@@ -60,6 +60,7 @@ nav ul {
     flex-direction: row;
     align-items: center;
     background-color: var(--Preto);
+
 }
 nav ul li {
     display: inline-block;
