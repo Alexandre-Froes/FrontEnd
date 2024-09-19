@@ -47,6 +47,7 @@
 }
 body {
     background-color: var(--BrancoPagina);
+    font-family: Poppins, 'Times New Roman', Arial;
 }
 iframe {
     border: none;
