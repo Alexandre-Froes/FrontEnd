@@ -5,9 +5,9 @@ Na pasta ProjetoWeb está inserido diversas páginas desenvolvidas em sala de au
 Já na pasta de sites, estão alguns projetos pessoais desenvolvidos por mim.
 
 Para acessar essas páginas você pode digitar na barra de pesquisa do google
-https://alexandre-froes.github.io/FrontEnd/html_css/projetoWeb/*caminho do arquivo que quer ser visitado*
+https://alexandre-froes.github.io/FrontEnd/html_css/projetoWeb/*caminhodoarquivoquequerservisitado*
 ou 
-https://alexandre-froes.github.io/FrontEnd/html_css/sitesDesenvolvidos/*caminho do arquivo que quer ser visitado*
+https://alexandre-froes.github.io/FrontEnd/html_css/sitesDesenvolvidos/*caminhodoarquivoquequerservisitado*
 e após a barra, qual pasta você deseja entrar.
 
 EXEMPLO: [https://alexandre-froes.github.io/IFTM/ProjetoWeb/projeto_final](https://alexandre-froes.github.io/FrontEnd/html_css/projetoWeb/listas/lista10/)
