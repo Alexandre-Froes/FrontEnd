@@ -1,0 +1,306 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+body {
+	margin: 0px;
+	line-height:1.4em;
+    font-family: 'Lato', Verdana, serif;
+}
+
+header{
+    background-color: black;
+}
+
+nav {
+    background-color: black;
+    height: 47px;
+    z-index: 1;
+}
+
+nav ul {
+    margin: 0px;
+    padding: 0px;
+    height: 47px;
+    position: fixed;
+    width: 100%;
+    background-color: black;
+}
+
+nav ul li {
+    display: inline;
+    font-size: 16px;
+    line-height: 45px;
+    height: 47px;
+}
+
+nav ul li:hover {
+    background-color: #cccccc;
+    color: black;
+}
+
+nav ul li a {
+    color: #cccccc;
+    text-decoration: none;
+    padding: 15px 20px 15px 20px;
+}
+
+nav ul li a:hover {
+    color: black;
+    background-color: #cccccc;
+    text-decoration: none;
+    padding: 15px 20px 15px 20px;
+}
+
+.pesquisa {
+    float: right;
+    align-content: center;
+    padding-left: 23px;
+    padding-right: 23px;
+}
+
+.pesquisa:hover {
+    background-color: #f44336;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.inferior-meio {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.titulo-img {
+    font-size: 25px;
+    font-weight: 300;
+}
+
+.descricao-img {
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+.opaco {
+    color: #666666;
+}
+
+main section {
+    text-align: center;
+}
+
+main section:nth-child(1) img {
+width: 100%;
+
+}
+
+h1 {
+    font-size: 28px;
+    font-weight: 400;
+    letter-spacing: 5px;
+}
+
+main section:nth-child(2) img {
+    height: 150px;
+    width: 150px;
+    margin: 10px 40px 10px 40px;
+
+}
+
+main section:nth-child(3) {
+    background-color: black;
+    text-align: center;
+    padding: 50px;
+}
+
+main section h2 {
+    color: white;
+    letter-spacing: 5px;
+    font-size: 30px;
+    font-weight: 300;
+}
+
+main section:nth-child(3) div hr {
+    width: 100%;
+}
+
+main section:nth-child(3) div p {
+ padding: 5px 10px 10px 15px;
+}
+
+main section:nth-child(3) div img {
+    padding: 0px;
+    height: 185px;
+    width: 245px;
+}
+
+main section:nth-child(3) div img:hover {
+    filter: brightness(70%);
+}
+
+main section:nth-child(4) h2 {
+    color: black;
+    padding: 50px 0px 40px 0px;
+}
+
+main section:nth-child(4) img {
+    width: 100%;
+}
+
+footer {
+    text-align: center;
+}
+footer i {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    font-size: 20px;
+    opacity: 0.8;
+}
+
+footer i:hover {
+    opacity: 0.5;
+    
+}
+
+footer a {
+    color: gray;
+    text-decoration: none;
+}
+
+footer p {
+    padding-bottom: 40px;
+}
+
+/* .grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 0px;
+}
+
+.grid-item {
+    padding: 0px 0px 10px 0px;
+    font-size: 15px;
+    text-align: center;
+} */
+
+.row {
+    display: flex;
+}
+
+.banda {
+    display:block;
+    text-align:center;
+    width: 800px;
+    margin: auto
+}
+
+.banda-img {
+    flex: 33.33%;
+    padding: 0px;
+}
+
+.datas-tour {
+    background-color: #ffffff;
+    padding: 10px;
+    text-align: left;
+    color: #737373;
+    margin-bottom: 32px;
+    width:780px;
+}
+
+.banda-descricao {
+    color: #666666;
+    font-style: italic;
+    font-weight: 600;
+    
+}
+
+.banda-texto {
+    text-align: justify;
+    padding: 0px 79px 80px 79px;
+    font-size: 15px;
+}
+
+.vendidos {
+    background-color: #f44336;
+    color: white;
+    padding: 2px;
+}
+
+.tour {
+    display:block;
+    text-align:center;
+    width: 800px;
+    margin: auto
+}
+  
+.tour-lugares {
+    flex: 33.33%;
+    padding: 0px;
+}
+
+.tour-lugares-container {
+    background-color: white;
+    padding: 0px;
+    text-align: left;
+    width: 245px;
+}
+
+.botao-ticket {
+    border: none;
+    color: white;
+    background-color: black;
+    padding: 10px;
+    margin: 10px 0px 20px 15px;
+    font-size: 16px;
+} 
+
+.botao-ticket:hover {
+    background-color: #cccccc;
+    color: black;
+}
+
+main section form input {
+    font-size: 15px;
+    border-color: #cccccc;
+    border-style: solid; 
+    padding: 10px 10px 10px 10px;
+    margin: 5px 10px 0px 0px;
+
+}
+
+.contato {
+    display:block;
+    text-align:center;
+    width: 800px;
+    margin: auto
+    
+}
+
+.contatos-coluna1 {
+    flex: 50%;
+    text-align: left;
+    padding: 20px 10px 200px 0px;
+    font-size: 18px;
+}
+
+.contatos-coluna2 {
+    flex: 50%;
+    text-align: left;
+    padding-left: 100px;
+}
+
+.nome-email input {
+    float: left;
+    width: 200px;
+}
+
+.mensagem input{
+    width: 410px;
+}
