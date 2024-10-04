@@ -30,7 +30,7 @@ for(i = 0; i < maior; i++ ){
         document.write(`        <td><span>${homem[i]}</span></td>`);
     else document.write(`         <td><span>---</span></td>`);
 
-    if(mulher != undefined)
+    if(mulher[i] != undefined)
         document.write(`        <td><span>${mulher[i]}</span></td>`);
     else document.write(`         <td><span>---</span></td>`);
 
