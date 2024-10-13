@@ -20,7 +20,7 @@ for(var i = 0; i < 6; i++) {
         i--;
     }
 }
-document.write(`<p>Aqui estão 6 números aleatórios da mega sena:</p>`);
+document.write(`<h1>Aqui estão 6 números aleatórios da mega sena:</h1>`);
 
 for(var i in numerosMega) {
     document.write(`<p class="sorteio">${numerosMega[i]}</p>`);

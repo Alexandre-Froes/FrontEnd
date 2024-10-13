@@ -23,5 +23,5 @@ var max;
 
 var aleatorio = numAleatorio(min, qtdPassageiros);
 
-document.write(`<p class="sorteio"> Parabéns ${nome[aleatorio - 1]}! Você ganhou o sorteio!</p>`);
+document.write(`<p class="sorteio"> Parabéns ${nome[aleatorio - 1]}, Você ganhou o sorteio!</p>`);
 document.write(`<p class="sorteio">A média das idades dos passageiros é: ${(somaIdades / qtdPassageiros).toFixed(2)}</p>`);

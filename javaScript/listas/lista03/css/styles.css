@@ -3,6 +3,20 @@
     margin: 0px;
     box-sizing: border-box;
 }
+.main {
+    text-align: left;
+    padding: 50px;
+}
+.main h1 {
+    font-size: 50px;
+    border-bottom: #231B1D solid 5px;
+}
+li {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    margin: 10px;
+    text-align: left;
+}
 
 body {
     text-align: center;
@@ -17,6 +31,9 @@ span {
 .dados {
     width: 300px;
     height: 300px;
+}
+img {
+    margin-top: 50px;
 }
 .jogoPPT {
     font-size: 30px;
