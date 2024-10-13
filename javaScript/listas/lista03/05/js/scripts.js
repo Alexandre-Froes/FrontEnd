@@ -18,12 +18,10 @@ for(i = 0; i < qtdPassageiros; i++) {
     somaIdades += idade[i];
 }
 
-var mediaIdades = parseFloat(somaIdades / qtdPassageiros);
-
 var min = 1;
 var max;
 
-var aleatorio = numAleatorio(min, qtdPassageiros - 1);
+var aleatorio = numAleatorio(min, qtdPassageiros);
 
-document.write(`<p class="sorteio"> Parabéns ${nome[aleatorio]}! Você ganhou o sorteio!</p>`);
-document.write(`<p class="sorteio">A média das idades dos passageiros é: ${mediaIdades.toFixed(2)}</p>`);
+document.write(`<p class="sorteio"> Parabéns ${nome[aleatorio - 1]}! Você ganhou o sorteio!</p>`);
+document.write(`<p class="sorteio">A média das idades dos passageiros é: ${(somaIdades / qtdPassageiros).toFixed(2)}</p>`);

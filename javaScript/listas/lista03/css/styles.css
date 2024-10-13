@@ -1,9 +1,64 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
 body {
     text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
 }
 span {
     font-size: 100px;
 }
 .sorteio {
     font-size: 50px;
+}
+.dados {
+    width: 300px;
+    height: 300px;
+}
+.jogoPPT {
+    font-size: 30px;
+}
+i {
+    font-size: 100px;
+}
+.nomesSorteioApresentacao {
+    margin: 30px auto;
+    background-color: #F5FBEF;
+    border: #84C318 5px solid;
+    width: 40%;
+}
+.nomesSorteioApresentacao p {
+    color: #231B1D;
+    margin: 30px auto;
+    width: 50%;
+    font-size: 2rem;
+    border-bottom: 4px solid rgba(0, 0, 0, 0.171);
+}
+
+.jogoBaralho {
+    display: flex;
+    align-items: center;
+    margin: 30px auto;
+    width: 800px;
+}
+.jogoBaralho p {
+    width: 40%;
+    font-size: 40px;
+}
+.jogoBaralho img {
+    width: 30%;
+    margin: 0px 5px;
+}
+.jogoTruco h1 {
+    margin-top: 40px;
+    font-size: 100px;
+    text-transform: uppercase;
+}
+.jogoTruco h2 {
+    margin: 20px 0 100px 0;
+    font-size: 60px;
+    text-transform: uppercase;
 }
