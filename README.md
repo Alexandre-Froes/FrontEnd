@@ -1,8 +1,10 @@
- NOME DO REPOSITORIO
- Aqui estão localizados os arquivos desenvolvidos durante as matérias relacionadas no front end em diversas matérias no Intituto Federal do Triângulo Mineiro [(IFTM)](https://iftm.edu.br/). Atualmente, nesse repositório é possível encontrar conteúdos das seguintes disciplinas:
+# FrontEnd
+
+ Aqui estão localizados os arquivos desenvolvidos relacionadas no FrontEnd em diversas matérias no Intituto Federal do Triângulo Mineiro [(IFTM)](https://iftm.edu.br/) e projetos pessoas de templates de sites. Atualmente, nesse repositório é possível encontrar conteúdos das seguintes disciplinas:
 
 - Projeto Website Estático (PWE)
 - JavaScript Básico (JSB)
+
 
 ## Encontrando os códigos
 
@@ -16,42 +18,31 @@
 Seguido pelo caminho das pastas para o acesso, por exemplo:
 - html_css/projetoWeb/listas/lista16 
 
-Para acessar a lista 16, que está localizada na disciplina Projeto Web dentro da pasta html_css. Logo o link completo ficaria:
+Para acessar a lista 16, que está localizada na disciplina Projeto Web dentro da pasta html_css basta colocar o caminho do mesmo, então o link completo ficaria:
 
 - https://alexandre-froes.github.io/FrontEnd/html_css/projetoWeb/listas/lista16 
 
 Com esse link é possível acessar o site e conteúdo da lista 16.
 
-### Projeto Website Estático
 ___
 
-> Na pasta de ProjetoWeb inserido páginas desenvolvidas em sala de aula na matéria Projeto Website Estático ministrada pelo professor Wilton Filho. Nelas estão contidas os arquivos .html e .css.
+### Projeto Website Estático
+
+> Na pasta de "ProjetoWeb", inserida dentro da pasta "html_css" inserido páginas desenvolvidas em sala de aula na matéria Projeto Website Estático ministrada pelo professor Wilton Filho. Nelas estão contidas os arquivos .html e .css.
+
+> Clicando [AQUI](https://alexandre-froes.github.io/FrontEnd/html_css/projetoWeb/projeto_final/) é possível encontrar o projeto final da matéria.
+
+___
 
 ### JavaScript Básico
-___
 
-> Na pasta javaStcipt está inserido códigos e páginas desenvolvidas em sala de aula na matéria JavaScript Básico ministrada pelo professor Wilton Filho. Nelas estão contidas os arquivos .html, .css e .js.
+> Na pasta javaScript está inserido códigos e páginas desenvolvidas em sala de aula na matéria JavaScript Básico ministrada pelo professor Wilton Filho. Nelas estão contidas os arquivos .html, .css e .js.
+
+___
 
 ### Sites Desenvolvidos
-___
 
 > Na pasta sitesDesenvolvidos estão os sites de desenvolvimento pessoal de template, para estudo, sem a intenção de plágio ou cópia. 
 
 
 *Os códigos foram desenvolvidos por mim, Alexandre Silva Froes*
-
-<!-- Aqui estão localizados os arquivos desenvolvidos durante as matérias relacionadas no front end, no IFTM (Instituto Federal do Triângulo Mineiro), todos esses códigos foram produzidos por mim, Alexandre Froes.
-
-
-Na pasta ProjetoWeb está inserido páginas desenvolvidas em sala de aula na matéria Projeto Website Estático ministrada pelo professor Wilton Filho. Nelas estão contidas os arquivos .html e .css .
-Já na pasta de sites, estão alguns projetos pessoais desenvolvidos por mim.
-
-Para acessar essas páginas você pode digitar na barra de pesquisa do google
-https://alexandre-froes.github.io/FrontEnd/html_css/projetoWeb/
-ou 
-https://alexandre-froes.github.io/FrontEnd/html_css/sitesDesenvolvidos/
-e após a barra, qual pasta você deseja entrar.
-
-EXEMPLO: [https://alexandre-froes.github.io/IFTM/ProjetoWeb/projeto_final](https://alexandre-froes.github.io/FrontEnd/html_css/projetoWeb/listas/lista10/)
-
-Na pasta JavaStcipt está inserido códigos e páginas desenvolvidas em sala de aula na matéria JavaScript Básico ministrada pelo professor Wilton Filho. Nelas estão contidas os arquivos .html, .css e .js. -->
