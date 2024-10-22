@@ -336,8 +336,8 @@ section > div {
     margin-bottom: 300px;
 }
 .terraria > div > img {
-    transform: rotate(10deg);
-    top: 1.4vw;
+    transform: scalex(-1);
+    top: 6vw;
     width: 80%;
 }
 .terraria > div > div > div > img:first-of-type {
