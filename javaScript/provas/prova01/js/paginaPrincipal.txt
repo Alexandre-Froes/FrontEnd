@@ -1,0 +1,17 @@
+var entrar = document.getElementById("entrar");
+var senha = document.getElementById("senha");
+var user = document.getElementById("user");
+
+function exibirMsg(msg) {
+    alert(msg);
+}
+
+entrar.addEventListener("click", function() {
+    if (user.value == "" || senha.value == "") {    
+        exibirMsg("Informe a senha e o usuário");
+    } else if(user.value.toLowerCase() == "visitante" && user.senha != "") {
+        window.location.href = 'visitante.html'
+    } else {
+        document.location.href = 'construcao.html';
+    }
+}) 

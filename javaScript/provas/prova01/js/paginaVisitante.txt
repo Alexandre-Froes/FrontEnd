@@ -1,0 +1,39 @@
+var nome = document.getElementById("nome");
+var btnClick1 = document.getElementById("btnClick1");
+var btnClick2 = document.getElementById("btnClick2");
+var btnHover = document.getElementById("btnHover");
+var btnMouse = document.getElementById("btnMouseOut");
+var emoji = document.getElementById("imgEmoji");
+var saudacao = document.getElementById("saudacao");
+
+function numAleatorio(min, max) {
+    return parseInt(Math.random() * (max - min + 1)) + min; 
+}
+
+function trocarEmoji(num) {
+    return emoji.src = `img/emoji${num}.jpg`;
+}
+
+function trocarVisitante(nome) {
+    return (nome == "") ? saudacao.innerHTML = "Olá, visitante" : saudacao.innerHTML = `olá, ${nome}`;
+}
+
+btnClick1.addEventListener("click", function() {
+    trocarEmoji(1);
+    trocarVisitante(nome.value);
+});
+
+btnClick2.addEventListener("click", function() {
+    trocarEmoji(numAleatorio(1, 4));
+    trocarVisitante(nome.value);
+});
+
+btnHover.addEventListener("mouseover", function() {
+    trocarEmoji(2);
+    trocarVisitante(nome.value);
+});
+
+btnMouse.addEventListener("mouseout", function() {
+    trocarEmoji(3);
+    trocarVisitante(nome.value);
+})

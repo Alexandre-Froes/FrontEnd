@@ -4,8 +4,6 @@ window.addEventListener("DOMContentLoaded", function(){
     var idade = document.getElementById("idade");
     var btnSelecionar = document.getElementById("btnSelecionar")
 
-    
-    
     btnSelecionar.addEventListener("click", function(){
         var passatempo = document.getElementById("passaTempo");
         var opcaoEscolhida = passatempo.value;
