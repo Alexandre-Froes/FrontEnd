@@ -1,0 +1,5 @@
+.cat > img {
+    width: 200px;
+    border: solid black 2px;
+    margin: 5px;
+}
