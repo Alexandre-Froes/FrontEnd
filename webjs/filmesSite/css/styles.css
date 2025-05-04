@@ -119,6 +119,10 @@ h1 > img {
 .ruim {
     background-color: #792919;
 }
+.semNota {
+    background-color: #2c2c2c;
+    color: #c2c2c2b7;
+}
 
 .filmeInfo > div > p:nth-of-type(2) {
     display: block;

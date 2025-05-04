@@ -41,13 +41,18 @@ window.addEventListener("DOMContentLoaded", () => {
             nomeOriginal.textContent = filme.original_title;
 
             notaFilme.textContent = filme.vote_average;
+            if(filme.vote_average === 0) {
+                notaFilme.textContent = "Sem nota";
+                notaFilme.className = "semNota";
+            } 
+
             if(filme.vote_average >= 9) {
                 notaFilme.className = "muitoBoa";            
             } else if(filme.vote_average >= 7) {
                 notaFilme.className = "boa";
             } else if(filme.vote_average >= 5) {
                 notaFilme.className = "media";
-            } else {
+            } else if (filme.vote_average !== 0){
                 notaFilme.className = "ruim";
             }
 
