@@ -41,6 +41,9 @@ window.addEventListener("DOMContentLoaded", () => {
         
             const dataLancamento = document.createElement("p");
         
+            tituloFilme.textContent = filme.title;
+            nomeOriginal.textContent = filme.original_title;
+
             notaFilme.textContent = filme.vote_average;
             if(filme.vote_average === 0) {
                 notaFilme.textContent = "Sem nota";
