@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Yusei+Magic&display=swap');
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Montserrat, 'Arial';
+}
+body {
+    min-height: 89dvh;
+    background-image: linear-gradient(230deg, #0E0E0E, #131313, #080808);
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+main {
+    text-align: center;
+    color: #FFEBE7;
+}
+
+h1 {
+    display: flex;
+    margin: 100px auto;
+    align-items: center;
+    justify-content: center;
+    font-size: 4em;
+    animation: float 5s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    
+}
+h1 > img {
+    height: 100%;
+    width: 350px;
+    margin: 3px 0px 0px 12px;
+}
+
+.containerFilmes {
+    justify-content: center;
+    width: 70%;
+    margin: auto;
+}
+.containerFilmes > div {
+    width: 22%;
+    margin: 10px;
+    transition: all 0.2s;
+}
+.containerFilmes > div:hover {
+    transform: scale(1.05);
+    box-shadow: #ffebe715 0px 0px 100px 10px;
+}
+.containerFilmes > div > img {
+    width: 100%;
+    aspect-ratio: 350/540;
+}
+.filmeDiv {
+    background-color: #0e0d0d;
+    border-radius: 15px;
+}
+
+.filmeInfo {
+    cursor: default;
+    text-align: left;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.filmeInfo > h2 {
+    font-size: 1.3em;
+    margin-bottom: 2px;
+}
+.filmeInfo > p:nth-of-type(1) {
+    opacity: 0.5;
+    font-size: 0.8em;
+    margin-top: -1px;
+}
+.filmeInfo > div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.filmeInfo > div > p:nth-of-type(1) {
+    display: inline-block;
+    width: auto;
+    padding: 0px 5px;
+    border-radius: 4px;
+    margin-bottom: 2px;
+    font-weight: 500;
+}
+.muitoBoa {
+    background-color: #2b4397;
+}
+.boa {
+    background-color: #2D6E36;
+}
+.media {
+    background-color: #f7e56f;
+    color: #0A0A0A;
+}
+.ruim {
+    background-color: #792919;
+}
+
+.filmeInfo > div > p:nth-of-type(2) {
+    display: block;
+    opacity: 0.3;
+    font-size: 0.7em;
+    margin: -1px 5px;
+    font-weight: 700;
+}
+
+.filmeInfo > p:last-of-type {
+    opacity: 0.8;
+    font-size: 0.9em;
+    align-items: flex-end;
+}
+
+.filmeInfo > div > span {
+    background-color: rgba(255, 206, 206, 0.199);
+    margin: 2px;
+    padding: 0px 5px;
+    border-radius: 4px;
+}
+
+button {
+    padding: 60px;
+    font-size: 3em;
+    font-weight: 700;
+    background-color: #ffdedd;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.sumir {
+    display: none;
+    visibility: hidden;
+}
