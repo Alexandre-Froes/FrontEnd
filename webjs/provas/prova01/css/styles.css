@@ -140,7 +140,7 @@ h1 > img {
 
 .filmeInfo > div > span {
     background-color: rgba(255, 206, 206, 0.199);
-    margin-left: 2px;
+    margin-right: 2px;
     padding: 0px 5px;
     border-radius: 4px;
 }
