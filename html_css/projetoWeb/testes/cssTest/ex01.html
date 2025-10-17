@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        :root {
+        --like-color: #24A4F3;
+        --like-color-hover: hsl(from var(--like-color) h s calc(l + 10));
+        --like-color-active: hsl(from var(--like-color) h s calc(l - 20));
+        }
+
+        .post {
+            display: block;
+            background: #EEE;
+            color: #111;
+                @media (prefers-color-scheme: dark) {
+                    background: #222;
+                    color: #FFF;
+                }
+            .avatar {
+                width: 48px;
+                height: 48px;
+            }
+            & > .buttons {
+                display: flex;
+                .label {
+                font-size: 24px;
+                padding: 8px;
+                    @media (width <= 800px) {
+                        font-size: 16px;
+                        padding: 4px;
+                    }
+                }
+                .like {
+                cursor: pointer;
+                color: var(--like-color);
+                &:hover { color: var(--like-color-hover); }
+                &:active { color: var(--like-color-active); }
+                }
+            }
+        }
+
+        .toast {
+            transition: opacity 1s, translate 1s;
+            opacity: 1;
+            translate: 0 0;
+                @starting-style {
+                    opacity: 0;
+                    translate: 0 20px;
+                }
+        }
+    </style>
+</head>
+<body>
+
+    <article class="post">
+        <div class="header">
+            <img src="https://via.placeholder.com/48" alt="Avatar do usuário" class="avatar" />
+            <div class="user-info">
+            <strong>João Silva</strong><br />
+            <small>@joaosilva</small>
+        </div>
+        </div>
+
+        <div class="content">
+        Este é um post de exemplo em um site genérico. O botão de curtir abaixo muda de cor com hover e clique.
+        </div>
+
+        <div class="buttons">
+        <div class="label like">👍 Curtir</div>
+        <div class="label">💬 Comentar</div>
+        <div class="label">🔁 Compartilhar</div>
+        <div class="toast">teste kkk</div>
+        </div>
+    </article>
+</body>
+</html>
